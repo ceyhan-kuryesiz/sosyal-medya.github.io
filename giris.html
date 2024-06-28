@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş Yap - Clone Twitter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        .logo {
+            width: 150px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .container h2 {
+            margin-bottom: 20px;
+        }
+        .container input[type="text"],
+        .container input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        .container input[type="submit"] {
+            background-color: #1da1f2;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="link_to_your_logo_image" alt="Logo">
+    </div>
+    <div class="container">
+        <h2>Giriş Yap</h2>
+        <form id="loginForm" action="login.php" method="POST">
+            <input type="text" name="ad_soyad" placeholder="Adınız Soyadınız" required><br><br>
+            <input type="password" name="sifre" placeholder="Şifreniz" required><br><br>
+            <input type="submit" value="Giriş Yap">
+        </form>
+        <p>Hesabınız yok mu? <a href="kaydol.html">Kaydol</a></p>
+    </div>
+</body>
+</html>
